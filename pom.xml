@@ -23,13 +23,11 @@
   <build>
    <finalName>SampleWebApp</finalName>
   </build>
-  <build>
-        <plugin>            
+  <plugin>            
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-war-plugin</artifactId>
           <configuration>
             <webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
           </configuration>
-        </plugin>
-    </build>
+   </plugin>
 </project>
