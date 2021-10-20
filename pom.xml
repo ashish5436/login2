@@ -19,17 +19,19 @@
       <version>3.8.2</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <plugin>            
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-war-plugin</artifactId>
-      <configuration>
-         <webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
-      </configuration>
-      </plugin>
-    </dependency>
   </dependencies>
   <build>
     <finalName>SampleWebApp</finalName>
   </build>
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webXml>WebContent\WEB-INF\web.xml</webXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
